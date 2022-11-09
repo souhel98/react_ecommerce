@@ -168,14 +168,25 @@ span.text-red {
 .hero-banner-container button {
   border-radius: 15px;
   padding: 10px 16px;
+  border: 2px solid #f02d34;
   background-color: #f02d34;
   color: white;
-  border: none;
+  /* border: none; */
   margin-top: 40px;
   font-size: 18px;
   font-weight: 500;
   cursor: pointer;
   z-index: 10000 !important;
+  transform: scale(1);
+
+  transition: all ease-in-out .2s;
+}
+.hero-banner-container button:hover{
+  background-color: #fff;
+  color: #f02d34;
+  transform: scale(1.05);
+  
+  
 }
 
 .hero-banner-container h3 {
@@ -264,13 +275,21 @@ span.text-red {
   padding: 10px 16px;
   background-color: white;
   color: red;
-  border: none;
+  /* border: none; */
+  border: 2px solid white;
   margin-top: 40px;
   font-size: 18px;
   font-weight: 500;
   cursor: pointer;
+  transform: scale(1);
+  transition: all ease-in-out .2s;
 }
-
+.banner-desc button:hover{
+background-color: #f02d34;
+color: white;
+transform: scale(1.05);
+  
+}
 .left {
   max-width: 800px;
   width: 85%;
