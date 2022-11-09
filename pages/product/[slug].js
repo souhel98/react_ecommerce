@@ -19,7 +19,7 @@ const ProductDetails = ({ product, products }) => {
   return (
     <div>
       <div className="product-detail-container">
-        <div>
+        <div className='product-inner-section'>
           <div className="image-container">
             <img src={urlFor(image && image[index])} alt="product-img" className="product-detail-image" />
           </div>
@@ -51,8 +51,8 @@ const ProductDetails = ({ product, products }) => {
             </p>
           </div>
           <h4>Details: </h4>
-          <p>{details}</p>
-          <p className="price">${price}</p>
+          <p className='pro-details'>{details}</p>
+          <p className="price"><span className='blu'>Price:</span> ${price}</p>
           <div className="quantity">
             <h3>Quantity:</h3>
             <p className="quantity-desc">
