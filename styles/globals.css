@@ -290,6 +290,7 @@ span.text-red {
 .footer-banner-image {
   position: absolute;
   left: 34%;
+  top: 0;
   max-width: 400px;
   width: 30%;
 
