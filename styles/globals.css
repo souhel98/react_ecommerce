@@ -29,11 +29,15 @@ a {
   padding: 10px;
   overflow: hidden;
 }
-
+header{
+  max-width: 1400px;
+  margin: auto;
+  width: 100%;
+}
 .navbar-container {
   display: flex;
   justify-content: space-between;
-  margin: 6px 18px;
+  margin: 5px 8px 15px 8px;
   position: relative;
 }
 
@@ -79,9 +83,19 @@ span.text-red {
 }
 
 .logo {
-  color: gray;
-  font-size: 18px;
+  cursor: pointer;
+  font-size: 14px;
 
+}
+.logo-style{
+  color: black;
+  font-weight: 500;
+}
+.logo-style .bold {
+  font-weight: 700;
+  font-size: 26px;
+  color: #f02d34;
+  margin-right: -5px;
 }
 
 .cart-icon {
@@ -692,9 +706,9 @@ transform: scale(1.05);
 
 .success,
 .cancel {
-  width: 1000px;
+  width: 800px;
   margin: auto;
-  margin-top: 160px;
+  margin-top: 80px;
   background-color: #dcdcdc;
   padding: 50px;
   border-radius: 15px;
@@ -715,6 +729,7 @@ transform: scale(1.05);
   font-weight: 900;
   font-size: 40px;
   color: #324d67;
+  text-align: center;
 }
 
 .success .email-msg {
@@ -992,13 +1007,16 @@ transform: scale(1.05);
 
   .success,
   .cancel {
-    width: 370px;
+    width: auto;
     margin-top: 100px;
-    padding: 20px;
+    padding: 10px;
   }
 
   .success {
     height: 350px;
+  }
+  .success .btn{
+    max-width: 240px;
   }
 
   .success h2 {

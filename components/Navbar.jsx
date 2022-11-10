@@ -11,7 +11,7 @@ const Navbar = () => {
   return (
     <div className='navbar-container'>
       <p className='logo'>
-        <Link href='/'>My Headphones</Link>
+        <Link href='/'><span className='logo-style'><bold className="bold">MSST</bold> Store</span></Link>
       </p>
       
       <button type='button' className='cart-icon' onClick={() => setShowCart(true)}>
